@@ -19,8 +19,8 @@ class ListInteractor {
 
 extension ListInteractor: ListInteractorInput {
     
-    func requestFriendsInformation() {
-        repository.loadNews(listener: self)
+    func requestFriendsInformation(userId: Int) {
+        repository.loadNews(userId: userId, listener: self)
     }
     
 }

@@ -11,15 +11,17 @@ class ListPresenter: ListModuleInput {
     weak var view: ListViewInput!
     var interactor: ListInteractorInput!
     var router: ListRouterInput!
+    var userId: Int!
 
     var friends: [FriendModel]!
     
     init() {
         friends = [FriendModel]()
+        userId = 8820700 // Xenitch
     }
     
     func viewIsReady() {
-
+        interactor.requestFriendsInformation(userId: userId)
     }
 }
 

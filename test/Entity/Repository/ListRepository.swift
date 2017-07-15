@@ -17,7 +17,8 @@ protocol ListRepositoryListener {
 
 protocol ListRepository {
     
-    func loadNews(listener: ListRepositoryListener)
+    func loadNews(userId: Int,
+                  listener: ListRepositoryListener)
     
 }
 
@@ -39,10 +40,14 @@ class ListRepositoryImpl: BaseRepository<FriendModel> {
 
 extension ListRepositoryImpl: ListRepository {
     
-    func loadNews(listener: ListRepositoryListener) {
-        listener.successLoadedFriends(friends: db.getFriends())
-        net.process(response: ArrayHandler<FriendModel>.self,
-                    request: VKAPI.friends())
+    func loadNews(userId: Int,
+                  listener: ListRepositoryListener) {
+        if objectList.count == 0 {
+            objectList = db.getFriends()
+            listener.successLoadedFriends(friends: objectList)
+        }
+        net.process(response: FriendsResponse.self,
+                    request: VKAPI.friends(userId))
         { [weak self] (result) in
             if result.isSuccess {
                 guard let list = result.value?.list else {

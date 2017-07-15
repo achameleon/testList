@@ -14,6 +14,7 @@ class NetworkServiceImpl {
     var builder: RequestBuilder!
     
     init(requestBuilder: RequestBuilder) {
+        builder = requestBuilder
         generateSession()
     }
     
@@ -26,7 +27,7 @@ class NetworkServiceImpl {
         config.timeoutIntervalForResource = Const.Network.requestTimeout
         //cahce policy
         config.requestCachePolicy = .reloadIgnoringLocalCacheData
-        ///session = URLSession(
+        session = URLSession(configuration: config)
     }
     
     

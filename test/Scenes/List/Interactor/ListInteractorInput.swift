@@ -10,6 +10,6 @@ import Foundation
 
 protocol ListInteractorInput {
 
-    func requestFriendsInformation()
+    func requestFriendsInformation(userId: Int)
 
 }

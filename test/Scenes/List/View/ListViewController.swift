@@ -49,7 +49,7 @@ extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = output.dataForCellForRowSection(section: indexPath.section, row: indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell") as! ListCell
-        cell.lblText.text = item.listDescription
+        cell.lblText.text = item.firstName + "" + item.lastName
         return cell
     }
     

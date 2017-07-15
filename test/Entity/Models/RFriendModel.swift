@@ -12,7 +12,9 @@ import RealmSwift
 class RFriendModel: Object {
     
     dynamic var id: Int = 0
-    dynamic var listDescription: String = ""
+    dynamic var firstName: String = ""
+    dynamic var lastName: String = ""
+    dynamic var photoURL: String = ""
     
     override static func primaryKey() -> String? {
         return "id"

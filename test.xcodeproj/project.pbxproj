@@ -62,6 +62,7 @@
 		CE64F0D81F1A2FDB00D67CAD /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0D61F1A2FDB00D67CAD /* ListCell.xib */; };
 		CE64F0DB1F1A33A000D67CAD /* RepositoryAssemply.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0DA1F1A33A000D67CAD /* RepositoryAssemply.swift */; };
 		CE64F0DD1F1A347200D67CAD /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0DC1F1A347200D67CAD /* ControllerAssembly.swift */; };
+		CE64F0DF1F1A414400D67CAD /* FriendsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0DE1F1A414400D67CAD /* FriendsResponse.swift */; };
 		DB0421F9BC61237A773B8C3F /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF9F5AD5089E01D31A50B0 /* ListViewTests.swift */; };
 		DFD5B3829D3C991B1293F92B /* ListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B76B0B83FB4D9FA1B5258 /* ListModuleInput.swift */; };
 		F819957618FBEC1CBB660B40 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A09736081626020FEF48D8 /* ListInteractorTests.swift */; };
@@ -139,6 +140,7 @@
 		CE64F0D61F1A2FDB00D67CAD /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		CE64F0DA1F1A33A000D67CAD /* RepositoryAssemply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryAssemply.swift; path = Assembly/RepositoryAssemply.swift; sourceTree = "<group>"; };
 		CE64F0DC1F1A347200D67CAD /* ControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerAssembly.swift; path = Assembly/ControllerAssembly.swift; sourceTree = "<group>"; };
+		CE64F0DE1F1A414400D67CAD /* FriendsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsResponse.swift; path = Entity/Models/FriendsResponse.swift; sourceTree = "<group>"; };
 		FF0619BEF3DCEC50EC9C3B75 /* ListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -403,11 +405,12 @@
 		CE64F09B1F1A174B00D67CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CE64F0AD1F1A1B5400D67CAD /* ListModel */,
+				CE64F0AD1F1A1B5400D67CAD /* FriendModel */,
 				CE64F0A21F1A183700D67CAD /* Result.swift */,
 				CE64F0B41F1A1B9500D67CAD /* Mapper.swift */,
 				CE64F0CA1F1A23A500D67CAD /* LocalError.swift */,
 				CE64F0CF1F1A28DA00D67CAD /* ArrayHandler.swift */,
+				CE64F0DE1F1A414400D67CAD /* FriendsResponse.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -422,14 +425,14 @@
 			name = Const;
 			sourceTree = "<group>";
 		};
-		CE64F0AD1F1A1B5400D67CAD /* ListModel */ = {
+		CE64F0AD1F1A1B5400D67CAD /* FriendModel */ = {
 			isa = PBXGroup;
 			children = (
 				CE64F0AE1F1A1B6C00D67CAD /* FriendModel.swift */,
 				CE64F0B01F1A1B7A00D67CAD /* RFriendModel.swift */,
 				CE64F0B21F1A1B8700D67CAD /* FriendModelMapper.swift */,
 			);
-			name = ListModel;
+			name = FriendModel;
 			sourceTree = "<group>";
 		};
 		CE64F0B61F1A1CB200D67CAD /* Repository */ = {
@@ -679,6 +682,7 @@
 				91FFE0E2334C5DC5D9249336 /* ListViewOutput.swift in Sources */,
 				CE64F0D71F1A2FDB00D67CAD /* ListCell.swift in Sources */,
 				CE64F0AC1F1A1AFA00D67CAD /* RealmServiceImpl.swift in Sources */,
+				CE64F0DF1F1A414400D67CAD /* FriendsResponse.swift in Sources */,
 				17777FF0096FB4F951EED00F /* ListViewController.swift in Sources */,
 				CE64F0C51F1A213600D67CAD /* HTTPMethod.swift in Sources */,
 				CE64F0AF1F1A1B6C00D67CAD /* FriendModel.swift in Sources */,

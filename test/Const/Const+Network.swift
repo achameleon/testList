@@ -17,8 +17,8 @@ extension Const {
      
         static let debug: Bool = true
         
-        static let productionURL: String = ""
-        static let developmentURL: String = ""
+        static let productionURL: String = "https://api.vk.com"
+        static let developmentURL: String = "https://api.vk.com"
         
     }
     

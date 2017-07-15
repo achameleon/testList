@@ -13,14 +13,18 @@ class FriendModelMapper: Mapper<FriendModel, RFriendModel> {
     override func mapTo(item: RFriendModel) -> FriendModel? {
         let object = FriendModel()
         object.id = item.id
-        object.listDescription = item.listDescription
+        object.firstName = item.firstName
+        object.lastName = item.lastName
+        object.photoURL = item.photoURL
         return object
     }
     
     override func mapFrom(item: FriendModel) -> RFriendModel? {
         let object = RFriendModel()
         object.id = item.id
-        object.listDescription = item.listDescription
+        object.firstName = item.firstName
+        object.lastName = item.lastName
+        object.photoURL = item.photoURL
         return object
     }
     

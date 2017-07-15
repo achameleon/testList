@@ -11,7 +11,9 @@ import Foundation
 class FriendModel: Equatable, Mappable {
  
     var id: Int = 0
-    var listDescription: String = ""
+    var firstName: String = ""
+    var lastName: String = ""
+    var photoURL: String = ""
     
     init() {
         
@@ -19,7 +21,10 @@ class FriendModel: Equatable, Mappable {
     
     required init?(map: AnyObject?) {
         guard let map = map as? [String: AnyObject] else { return nil }
-        
+        id = map["id"] as? Int ?? 0
+        firstName = map["first_name"] as? String ?? ""
+        lastName = map["last_name"] as? String ?? ""
+        photoURL = map["photo_200_orig"] as? String ?? ""
     }
     
 }
