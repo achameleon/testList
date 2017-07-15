@@ -1,0 +1,21 @@
+# ORM
+github "realm/realm-cocoa"
+
+# Dependency Injection framefwork
+github "Swinject/Swinject" ~> 2.0.0
+
+# Tests
+github "Quick/Quick"
+github "Quick/Nimble" ~> 5.1.1
+
+# Logging
+github "CocoaLumberjack/CocoaLumberjack"
+
+# Menu
+github "xmartlabs/XLPagerTabStrip" ~> 7.0
+
+# UI
+github "andreamazz/AMScrollingNavbar"
+
+# image process
+github "https://github.com/onevcat/Kingfisher"
