@@ -21,6 +21,7 @@ class ListPresenter: ListModuleInput {
     }
     
     func viewIsReady() {
+        view.setupInitialState()
         interactor.requestFriendsInformation(userId: userId)
     }
 }

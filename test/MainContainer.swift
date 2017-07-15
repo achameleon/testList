@@ -9,6 +9,7 @@
 import Foundation
 import Swinject
 import UIKit
+import AMScrollingNavbar
 
 class MainContainer {
     
@@ -25,7 +26,8 @@ class MainContainer {
     func start() {
         window = UIWindow(frame: UIScreen.main.bounds)
         let controller = container.resolve(ListModuleConfigurator.self)!
-        window.rootViewController = controller.viewController
+        let nc = ScrollingNavigationController(rootViewController: controller.viewController)
+        window.rootViewController = nc
         window.makeKeyAndVisible()
     }
     

@@ -63,6 +63,8 @@
 		CE64F0DB1F1A33A000D67CAD /* RepositoryAssemply.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0DA1F1A33A000D67CAD /* RepositoryAssemply.swift */; };
 		CE64F0DD1F1A347200D67CAD /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0DC1F1A347200D67CAD /* ControllerAssembly.swift */; };
 		CE64F0DF1F1A414400D67CAD /* FriendsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0DE1F1A414400D67CAD /* FriendsResponse.swift */; };
+		CE64F0E51F1A4E5A00D67CAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0E31F1A4E5A00D67CAD /* Localizable.strings */; };
+		CE64F0E81F1A4E7500D67CAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0E61F1A4E7500D67CAD /* Localizable.strings */; };
 		DB0421F9BC61237A773B8C3F /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF9F5AD5089E01D31A50B0 /* ListViewTests.swift */; };
 		DFD5B3829D3C991B1293F92B /* ListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B76B0B83FB4D9FA1B5258 /* ListModuleInput.swift */; };
 		F819957618FBEC1CBB660B40 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A09736081626020FEF48D8 /* ListInteractorTests.swift */; };
@@ -141,6 +143,8 @@
 		CE64F0DA1F1A33A000D67CAD /* RepositoryAssemply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryAssemply.swift; path = Assembly/RepositoryAssemply.swift; sourceTree = "<group>"; };
 		CE64F0DC1F1A347200D67CAD /* ControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerAssembly.swift; path = Assembly/ControllerAssembly.swift; sourceTree = "<group>"; };
 		CE64F0DE1F1A414400D67CAD /* FriendsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsResponse.swift; path = Entity/Models/FriendsResponse.swift; sourceTree = "<group>"; };
+		CE64F0E41F1A4E5A00D67CAD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE64F0E71F1A4E7500D67CAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF0619BEF3DCEC50EC9C3B75 /* ListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -350,6 +354,7 @@
 		CE64F0931F1A158B00D67CAD /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				CE64F0E61F1A4E7500D67CAD /* Localizable.strings */,
 			);
 			name = en.lproj;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 		CE64F0941F1A159200D67CAD /* ru.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				CE64F0E31F1A4E5A00D67CAD /* Localizable.strings */,
 			);
 			name = ru.lproj;
 			sourceTree = "<group>";
@@ -563,7 +569,8 @@
 				TargetAttributes = {
 					CE64F04B1F1A0DF300D67CAD = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 53MY3YYJVP;
+						ProvisioningStyle = Manual;
 					};
 					CE64F05F1F1A0DF400D67CAD = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -579,6 +586,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = CE64F0431F1A0DF300D67CAD;
 			productRefGroup = CE64F04D1F1A0DF300D67CAD /* Products */;
@@ -596,6 +604,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE64F0E51F1A4E5A00D67CAD /* Localizable.strings in Resources */,
+				CE64F0E81F1A4E7500D67CAD /* Localizable.strings in Resources */,
 				CE64F05A1F1A0DF300D67CAD /* LaunchScreen.storyboard in Resources */,
 				CE64F0D81F1A2FDB00D67CAD /* ListCell.xib in Resources */,
 				CE64F0571F1A0DF300D67CAD /* Assets.xcassets in Resources */,
@@ -731,6 +741,22 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		CE64F0E31F1A4E5A00D67CAD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE64F0E41F1A4E5A00D67CAD /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CE64F0E61F1A4E7500D67CAD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE64F0E71F1A4E7500D67CAD /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -775,7 +801,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -820,7 +846,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -833,14 +859,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 53MY3YYJVP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = anton.skorodumov.test;
+				PRODUCT_BUNDLE_IDENTIFIER = info.goodline.safesensor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa38975c-b74d-4015-98e7-7db932260eb0";
+				PROVISIONING_PROFILE_SPECIFIER = SSDevelopment;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -849,14 +878,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = anton.skorodumov.test;
+				PRODUCT_BUNDLE_IDENTIFIER = info.goodline.safesensor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

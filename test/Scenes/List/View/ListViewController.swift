@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AMScrollingNavbar
 
 class ListViewController: UIViewController {
 
@@ -23,6 +24,9 @@ class ListViewController: UIViewController {
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 200.0
+        if let navigationController = navigationController as? ScrollingNavigationController {
+            navigationController.followScrollView(tableView, delay: 50.0)
+        }
     }
 
 }
@@ -30,6 +34,7 @@ class ListViewController: UIViewController {
 extension ListViewController: ListViewInput {
  
     func setupInitialState() {
+        navigationItem.title = loc("XENITCH_FRIENDS")
     }
     
     func reload() {
