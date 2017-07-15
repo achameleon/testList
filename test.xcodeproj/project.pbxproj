@@ -20,14 +20,11 @@
 		7F4E57055A8530DD3A19C738 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94269ECA05A51CDE337B2FC8 /* ListPresenter.swift */; };
 		8A6A3742E29879772D4478A0 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51379A17A819DB7E2F6100E /* ListInteractor.swift */; };
 		8DF193B7E318CD8FC64BA6A9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89125C482A461E5A22673342 /* ListViewController.swift */; };
-		997860EF658023EAA33A8D87 /* ListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5BE028D7CC2133D8782E /* ListViewInput.swift */; };
 		9A94B3E11ACF12AF45E8553A /* ListConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120116648E6000BDB463AA74 /* ListConfiguratorTests.swift */; };
 		9B1A4C1C3EE6B8BFA9B9DFB5 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CCC668F20D95C9047C9F31 /* ListInteractor.swift */; };
 		9B4F5C47FA3514306B90A551 /* ListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B871A009EEA80C67B39F6C /* ListViewInput.swift */; };
-		A4547CC748DBE28643957288 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C091FD55BA52031B4FE46 /* ListViewController.swift */; };
 		A8DA5A642076BEA7F16606CD /* ListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657659EED30D322E3A079BD /* ListModuleInput.swift */; };
 		C0D71AC1805CF724018AD63B /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC652AD5580C202C99C4A3 /* ListInteractorTests.swift */; };
-		C283D87C4013CE079797114C /* ListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1C6DD5B3CDCA672C80778 /* ListViewOutput.swift */; };
 		C39701A24D3E212DDB0FBDB3 /* ListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780CEB5A6C9239B65890B43 /* ListViewOutput.swift */; };
 		C63E63B791E4F0FE8676D426 /* ListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B539ADD1272163A85A1F9 /* ListInteractorOutput.swift */; };
 		CE64F0501F1A0DF300D67CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F04F1F1A0DF300D67CAD /* AppDelegate.swift */; };
@@ -35,9 +32,20 @@
 		CE64F0571F1A0DF300D67CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0561F1A0DF300D67CAD /* Assets.xcassets */; };
 		CE64F05A1F1A0DF300D67CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0581F1A0DF300D67CAD /* LaunchScreen.storyboard */; };
 		CE64F0651F1A0DF400D67CAD /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0641F1A0DF400D67CAD /* testTests.swift */; };
+		CE64F0731F1A13A300D67CAD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F06F1F1A13A300D67CAD /* ListViewController.swift */; };
+		CE64F0741F1A13A300D67CAD /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0701F1A13A300D67CAD /* ListViewController.xib */; };
+		CE64F0751F1A13A300D67CAD /* ListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0711F1A13A300D67CAD /* ListViewInput.swift */; };
+		CE64F0761F1A13A300D67CAD /* ListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0721F1A13A300D67CAD /* ListViewOutput.swift */; };
+		CE64F07F1F1A13F500D67CAD /* AMScrollingNavbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64F0781F1A13F500D67CAD /* AMScrollingNavbar.framework */; };
+		CE64F0801F1A13F500D67CAD /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64F0791F1A13F500D67CAD /* Kingfisher.framework */; };
+		CE64F0831F1A13F500D67CAD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64F07C1F1A13F500D67CAD /* Realm.framework */; };
+		CE64F0841F1A13F500D67CAD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64F07D1F1A13F500D67CAD /* RealmSwift.framework */; };
+		CE64F0851F1A13F500D67CAD /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64F07E1F1A13F500D67CAD /* Swinject.framework */; };
+		CE64F0871F1A14AC00D67CAD /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64F07A1F1A13F500D67CAD /* Nimble.framework */; };
+		CE64F0881F1A14AC00D67CAD /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64F07B1F1A13F500D67CAD /* Quick.framework */; };
+		CE64F08A1F1A14BB00D67CAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64F0891F1A14BB00D67CAD /* XCTest.framework */; };
 		DD3E0546B2F073355A8B4A7A /* ListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8341E5BB0434076323640 /* ListRouterTests.swift */; };
 		E1311EDE5329B0991210A17E /* ListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C969860D6BA753576D10300 /* ListConfigurator.swift */; };
-		EEE2D2081FD9B07070EED50A /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B7CCE7931A73FF2CBE910B /* ListViewController.xib */; };
 		F0C5FC24C5BA342E62B29522 /* ListInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3111E395FDE2AB5802E56 /* ListInitializer.swift */; };
 		F23187C292043811C9922716 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC048205DDB6DD79B874E66 /* ListPresenter.swift */; };
 		F3A58803AEE36B271C1CFABE /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945442F6CFAE92DDD68715C /* ListPresenterTests.swift */; };
@@ -68,16 +76,13 @@
 		7FA3111E395FDE2AB5802E56 /* ListInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInitializer.swift; sourceTree = "<group>"; };
 		89125C482A461E5A22673342 /* ListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		8A90A250C283B16879EE1497 /* ListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
-		8BF1C6DD5B3CDCA672C80778 /* ListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewOutput.swift; sourceTree = "<group>"; };
 		94269ECA05A51CDE337B2FC8 /* ListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		9B5C091FD55BA52031B4FE46 /* ListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A02D5013CF9EAF1F0D0C9FDD /* ListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractorInput.swift; sourceTree = "<group>"; };
 		A270B86A418D59F63D3C0E79 /* ListInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInitializer.swift; sourceTree = "<group>"; };
 		B51379A17A819DB7E2F6100E /* ListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		B5D3643A7166231408F9B8DD /* ListViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewTests.swift; sourceTree = "<group>"; };
 		B6DF66709165DA4C4820665A /* ListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListRouterInput.swift; sourceTree = "<group>"; };
 		B945442F6CFAE92DDD68715C /* ListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
-		C3B7CCE7931A73FF2CBE910B /* ListViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		CAB03F68A4FE3F235CAE4595 /* ListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractorInput.swift; sourceTree = "<group>"; };
 		CE64F04C1F1A0DF300D67CAD /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE64F04F1F1A0DF300D67CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,9 +93,20 @@
 		CE64F0601F1A0DF400D67CAD /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE64F0641F1A0DF400D67CAD /* testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTests.swift; sourceTree = "<group>"; };
 		CE64F0661F1A0DF400D67CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE64F06F1F1A13A300D67CAD /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CE64F0701F1A13A300D67CAD /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		CE64F0711F1A13A300D67CAD /* ListViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewInput.swift; sourceTree = "<group>"; };
+		CE64F0721F1A13A300D67CAD /* ListViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewOutput.swift; sourceTree = "<group>"; };
+		CE64F0781F1A13F500D67CAD /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMScrollingNavbar.framework; path = Carthage/Build/iOS/AMScrollingNavbar.framework; sourceTree = "<group>"; };
+		CE64F0791F1A13F500D67CAD /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		CE64F07A1F1A13F500D67CAD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		CE64F07B1F1A13F500D67CAD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		CE64F07C1F1A13F500D67CAD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		CE64F07D1F1A13F500D67CAD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		CE64F07E1F1A13F500D67CAD /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		CE64F0891F1A14BB00D67CAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E1CCC668F20D95C9047C9F31 /* ListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		E3B871A009EEA80C67B39F6C /* ListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewInput.swift; sourceTree = "<group>"; };
-		E6DE5BE028D7CC2133D8782E /* ListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewInput.swift; sourceTree = "<group>"; };
 		E8D8341E5BB0434076323640 /* ListRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListRouterTests.swift; sourceTree = "<group>"; };
 		F2DA12879F1BE0A800FE5709 /* ListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListRouterInput.swift; sourceTree = "<group>"; };
 		F90B539ADD1272163A85A1F9 /* ListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractorOutput.swift; sourceTree = "<group>"; };
@@ -101,6 +117,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE64F07F1F1A13F500D67CAD /* AMScrollingNavbar.framework in Frameworks */,
+				CE64F0801F1A13F500D67CAD /* Kingfisher.framework in Frameworks */,
+				CE64F0831F1A13F500D67CAD /* Realm.framework in Frameworks */,
+				CE64F0841F1A13F500D67CAD /* RealmSwift.framework in Frameworks */,
+				CE64F0851F1A13F500D67CAD /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +129,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE64F08A1F1A14BB00D67CAD /* XCTest.framework in Frameworks */,
+				CE64F0871F1A14AC00D67CAD /* Nimble.framework in Frameworks */,
+				CE64F0881F1A14AC00D67CAD /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +147,6 @@
 				794D6FFF944082E55DEB0B0C /* Router */,
 				68687E6C87FD78AE2563D00A /* Configurator */,
 			);
-			name = List;
 			path = List;
 			sourceTree = "<group>";
 		};
@@ -133,7 +156,6 @@
 				25E487BDAC841E136C1C316D /* ListModuleInput.swift */,
 				3DC048205DDB6DD79B874E66 /* ListPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -142,7 +164,6 @@
 			children = (
 				79CC652AD5580C202C99C4A3 /* ListInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -152,7 +173,6 @@
 				8A90A250C283B16879EE1497 /* ListConfigurator.swift */,
 				A270B86A418D59F63D3C0E79 /* ListInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -162,7 +182,6 @@
 				F2DA12879F1BE0A800FE5709 /* ListRouterInput.swift */,
 				579F0CE4338E2677232374A7 /* ListRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -173,7 +192,6 @@
 				F90B539ADD1272163A85A1F9 /* ListInteractorOutput.swift */,
 				E1CCC668F20D95C9047C9F31 /* ListInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -182,7 +200,6 @@
 			children = (
 				FE13970690BEFF327ED63823 /* List */,
 			);
-			name = Scenes;
 			path = Scenes;
 			sourceTree = "<group>";
 		};
@@ -191,7 +208,6 @@
 			children = (
 				13D491506886B5B118EE69B1 /* List */,
 			);
-			name = Scenes;
 			path = Scenes;
 			sourceTree = "<group>";
 		};
@@ -200,19 +216,17 @@
 			children = (
 				120116648E6000BDB463AA74 /* ListConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
 		BBD6639DF222ACA8BBB216BE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E6DE5BE028D7CC2133D8782E /* ListViewInput.swift */,
-				8BF1C6DD5B3CDCA672C80778 /* ListViewOutput.swift */,
-				9B5C091FD55BA52031B4FE46 /* ListViewController.swift */,
-				C3B7CCE7931A73FF2CBE910B /* ListViewController.xib */,
+				CE64F06F1F1A13A300D67CAD /* ListViewController.swift */,
+				CE64F0701F1A13A300D67CAD /* ListViewController.xib */,
+				CE64F0711F1A13A300D67CAD /* ListViewInput.swift */,
+				CE64F0721F1A13A300D67CAD /* ListViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -221,7 +235,6 @@
 			children = (
 				E8D8341E5BB0434076323640 /* ListRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -231,6 +244,7 @@
 				CE64F04E1F1A0DF300D67CAD /* test */,
 				CE64F0631F1A0DF400D67CAD /* testTests */,
 				CE64F04D1F1A0DF300D67CAD /* Products */,
+				CE64F0771F1A13F500D67CAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,12 +280,26 @@
 			path = testTests;
 			sourceTree = "<group>";
 		};
+		CE64F0771F1A13F500D67CAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE64F0891F1A14BB00D67CAD /* XCTest.framework */,
+				CE64F0781F1A13F500D67CAD /* AMScrollingNavbar.framework */,
+				CE64F0791F1A13F500D67CAD /* Kingfisher.framework */,
+				CE64F07A1F1A13F500D67CAD /* Nimble.framework */,
+				CE64F07B1F1A13F500D67CAD /* Quick.framework */,
+				CE64F07C1F1A13F500D67CAD /* Realm.framework */,
+				CE64F07D1F1A13F500D67CAD /* RealmSwift.framework */,
+				CE64F07E1F1A13F500D67CAD /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE7DF746D4A625D069575BE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B5D3643A7166231408F9B8DD /* ListViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -280,7 +308,6 @@
 			children = (
 				B945442F6CFAE92DDD68715C /* ListPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -293,7 +320,6 @@
 				FDFFAE05D366A5BFCE4D60F6 /* Presenter */,
 				C5CFB7C516BBE30EF6BC33BF /* Router */,
 			);
-			name = List;
 			path = List;
 			sourceTree = "<group>";
 		};
@@ -305,6 +331,7 @@
 			buildConfigurationList = CE64F0691F1A0DF400D67CAD /* Build configuration list for PBXNativeTarget "test" */;
 			buildPhases = (
 				CE64F0481F1A0DF300D67CAD /* Sources */,
+				CE64F0861F1A140E00D67CAD /* Carthage Run Script */,
 				CE64F0491F1A0DF300D67CAD /* Frameworks */,
 				CE64F04A1F1A0DF300D67CAD /* Resources */,
 			);
@@ -324,6 +351,7 @@
 				CE64F05C1F1A0DF400D67CAD /* Sources */,
 				CE64F05D1F1A0DF400D67CAD /* Frameworks */,
 				CE64F05E1F1A0DF400D67CAD /* Resources */,
+				CE64F08B1F1A14D300D67CAD /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
@@ -382,7 +410,7 @@
 			files = (
 				CE64F05A1F1A0DF300D67CAD /* LaunchScreen.storyboard in Resources */,
 				CE64F0571F1A0DF300D67CAD /* Assets.xcassets in Resources */,
-				EEE2D2081FD9B07070EED50A /* ListViewController.xib in Resources */,
+				CE64F0741F1A13A300D67CAD /* ListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +423,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE64F0861F1A140E00D67CAD /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AMScrollingNavbar.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		CE64F08B1F1A14D300D67CAD /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE64F0481F1A0DF300D67CAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -402,6 +468,7 @@
 			files = (
 				CE64F0521F1A0DF300D67CAD /* ViewController.swift in Sources */,
 				CE64F0501F1A0DF300D67CAD /* AppDelegate.swift in Sources */,
+				CE64F0751F1A13A300D67CAD /* ListViewInput.swift in Sources */,
 				9B4F5C47FA3514306B90A551 /* ListViewInput.swift in Sources */,
 				C39701A24D3E212DDB0FBDB3 /* ListViewOutput.swift in Sources */,
 				8DF193B7E318CD8FC64BA6A9 /* ListViewController.swift in Sources */,
@@ -414,10 +481,9 @@
 				59B02E7FA8E859CAFFBCFE78 /* ListRouter.swift in Sources */,
 				E1311EDE5329B0991210A17E /* ListConfigurator.swift in Sources */,
 				F0C5FC24C5BA342E62B29522 /* ListInitializer.swift in Sources */,
-				997860EF658023EAA33A8D87 /* ListViewInput.swift in Sources */,
-				C283D87C4013CE079797114C /* ListViewOutput.swift in Sources */,
-				A4547CC748DBE28643957288 /* ListViewController.swift in Sources */,
+				CE64F0731F1A13A300D67CAD /* ListViewController.swift in Sources */,
 				24256EE6B0D659298F6155D2 /* ListModuleInput.swift in Sources */,
+				CE64F0761F1A13A300D67CAD /* ListViewOutput.swift in Sources */,
 				F23187C292043811C9922716 /* ListPresenter.swift in Sources */,
 				F8166C5F1B5BC41F80D689A2 /* ListInteractorInput.swift in Sources */,
 				C63E63B791E4F0FE8676D426 /* ListInteractorOutput.swift in Sources */,
@@ -563,6 +629,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anton.skorodumov.test;
@@ -575,6 +645,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anton.skorodumov.test;
@@ -588,6 +662,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = testTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anton.skorodumov.testTests;
@@ -602,6 +680,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = testTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anton.skorodumov.testTests;
