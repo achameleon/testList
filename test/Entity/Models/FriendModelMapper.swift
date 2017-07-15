@@ -8,17 +8,17 @@
 
 import Foundation
 
-class ListModelMapper: Mapper<ListModel, RListModel> {
+class FriendModelMapper: Mapper<FriendModel, RFriendModel> {
     
-    override func mapTo(item: RListModel) -> ListModel? {
-        let object = ListModel()
+    override func mapTo(item: RFriendModel) -> FriendModel? {
+        let object = FriendModel()
         object.id = item.id
         object.listDescription = item.listDescription
         return object
     }
     
-    override func mapFrom(item: ListModel) -> RListModel? {
-        let object = RListModel()
+    override func mapFrom(item: FriendModel) -> RFriendModel? {
+        let object = RFriendModel()
         object.id = item.id
         object.listDescription = item.listDescription
         return object

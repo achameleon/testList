@@ -8,15 +8,24 @@
 
 import Foundation
 
-class ListModel: Equatable {
+class FriendModel: Equatable, Mappable {
  
     var id: Int = 0
     var listDescription: String = ""
     
+    init() {
+        
+    }
+    
+    required init?(map: AnyObject?) {
+        guard let map = map as? [String: AnyObject] else { return nil }
+        
+    }
+    
 }
 
-extension ListModel {
-    static func ==(lhs: ListModel, rhs: ListModel) -> Bool {
+extension FriendModel {
+    static func ==(lhs: FriendModel, rhs: FriendModel) -> Bool {
         return lhs.id == rhs.id && rhs.id == lhs.id
     }
 }

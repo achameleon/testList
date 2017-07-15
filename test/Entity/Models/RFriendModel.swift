@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class RListModel: Object {
+class RFriendModel: Object {
     
     dynamic var id: Int = 0
     dynamic var listDescription: String = ""

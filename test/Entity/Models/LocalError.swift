@@ -1,5 +1,5 @@
 //
-//  Mappable.swift
+//  LocalError.swift
 //  test
 //
 //  Created by Anton Skorodumov on 15.07.17.
@@ -8,8 +8,10 @@
 
 import Foundation
 
-protocol Mappable {
+enum LocalError: Error {
     
-    init?(map: AnyObject?)
+    case httpErrorCode(Int)
+    case invalidAPIURL()
+    case failureNewsLoaded()
     
 }

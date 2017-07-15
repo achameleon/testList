@@ -43,12 +43,23 @@
 		CE64F0A81F1A18F600D67CAD /* Const+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0A71F1A18F600D67CAD /* Const+Network.swift */; };
 		CE64F0AA1F1A1AEC00D67CAD /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0A91F1A1AEC00D67CAD /* RealmService.swift */; };
 		CE64F0AC1F1A1AFA00D67CAD /* RealmServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0AB1F1A1AFA00D67CAD /* RealmServiceImpl.swift */; };
-		CE64F0AF1F1A1B6C00D67CAD /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0AE1F1A1B6C00D67CAD /* ListModel.swift */; };
-		CE64F0B11F1A1B7A00D67CAD /* RListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B01F1A1B7A00D67CAD /* RListModel.swift */; };
-		CE64F0B31F1A1B8700D67CAD /* ListModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B21F1A1B8700D67CAD /* ListModelMapper.swift */; };
+		CE64F0AF1F1A1B6C00D67CAD /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0AE1F1A1B6C00D67CAD /* FriendModel.swift */; };
+		CE64F0B11F1A1B7A00D67CAD /* RFriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B01F1A1B7A00D67CAD /* RFriendModel.swift */; };
+		CE64F0B31F1A1B8700D67CAD /* FriendModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B21F1A1B8700D67CAD /* FriendModelMapper.swift */; };
 		CE64F0B51F1A1B9500D67CAD /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B41F1A1B9500D67CAD /* Mapper.swift */; };
 		CE64F0BA1F1A1CD200D67CAD /* ListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B91F1A1CD200D67CAD /* ListRepository.swift */; };
 		CE64F0BE1F1A1D0700D67CAD /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0BD1F1A1D0700D67CAD /* BaseRepository.swift */; };
+		CE64F0C01F1A1FCE00D67CAD /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0BF1F1A1FCE00D67CAD /* RequestBuilder.swift */; };
+		CE64F0C31F1A203200D67CAD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0C21F1A203200D67CAD /* Request.swift */; };
+		CE64F0C51F1A213600D67CAD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0C41F1A213600D67CAD /* HTTPMethod.swift */; };
+		CE64F0C71F1A221700D67CAD /* VKAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0C61F1A221700D67CAD /* VKAPI.swift */; };
+		CE64F0C91F1A236600D67CAD /* Const+HTTPCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0C81F1A236600D67CAD /* Const+HTTPCode.swift */; };
+		CE64F0CB1F1A23A500D67CAD /* LocalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0CA1F1A23A500D67CAD /* LocalError.swift */; };
+		CE64F0CE1F1A243600D67CAD /* Data+serializeJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0CD1F1A243600D67CAD /* Data+serializeJSON.swift */; };
+		CE64F0D01F1A28DA00D67CAD /* ArrayHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0CF1F1A28DA00D67CAD /* ArrayHandler.swift */; };
+		CE64F0D21F1A297900D67CAD /* NewsLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0D11F1A297900D67CAD /* NewsLocalStorage.swift */; };
+		CE64F0D71F1A2FDB00D67CAD /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0D51F1A2FDB00D67CAD /* ListCell.swift */; };
+		CE64F0D81F1A2FDB00D67CAD /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0D61F1A2FDB00D67CAD /* ListCell.xib */; };
 		DB0421F9BC61237A773B8C3F /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF9F5AD5089E01D31A50B0 /* ListViewTests.swift */; };
 		DFD5B3829D3C991B1293F92B /* ListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B76B0B83FB4D9FA1B5258 /* ListModuleInput.swift */; };
 		F819957618FBEC1CBB660B40 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A09736081626020FEF48D8 /* ListInteractorTests.swift */; };
@@ -107,12 +118,23 @@
 		CE64F0A71F1A18F600D67CAD /* Const+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Const+Network.swift"; path = "Const/Const+Network.swift"; sourceTree = "<group>"; };
 		CE64F0A91F1A1AEC00D67CAD /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmService.swift; path = Entity/BaseStorage/RealmService.swift; sourceTree = "<group>"; };
 		CE64F0AB1F1A1AFA00D67CAD /* RealmServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmServiceImpl.swift; path = Entity/BaseStorage/RealmServiceImpl.swift; sourceTree = "<group>"; };
-		CE64F0AE1F1A1B6C00D67CAD /* ListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListModel.swift; path = Entity/Models/ListModel.swift; sourceTree = "<group>"; };
-		CE64F0B01F1A1B7A00D67CAD /* RListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RListModel.swift; path = Entity/Models/RListModel.swift; sourceTree = "<group>"; };
-		CE64F0B21F1A1B8700D67CAD /* ListModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListModelMapper.swift; path = Entity/Models/ListModelMapper.swift; sourceTree = "<group>"; };
+		CE64F0AE1F1A1B6C00D67CAD /* FriendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendModel.swift; path = Entity/Models/FriendModel.swift; sourceTree = "<group>"; };
+		CE64F0B01F1A1B7A00D67CAD /* RFriendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RFriendModel.swift; path = Entity/Models/RFriendModel.swift; sourceTree = "<group>"; };
+		CE64F0B21F1A1B8700D67CAD /* FriendModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendModelMapper.swift; path = Entity/Models/FriendModelMapper.swift; sourceTree = "<group>"; };
 		CE64F0B41F1A1B9500D67CAD /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Entity/Models/Mapper.swift; sourceTree = "<group>"; };
 		CE64F0B91F1A1CD200D67CAD /* ListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListRepository.swift; path = Entity/Repository/ListRepository.swift; sourceTree = "<group>"; };
 		CE64F0BD1F1A1D0700D67CAD /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRepository.swift; path = Entity/BaseStorage/BaseRepository.swift; sourceTree = "<group>"; };
+		CE64F0BF1F1A1FCE00D67CAD /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestBuilder.swift; path = Entity/BaseStorage/RequestBuilder.swift; sourceTree = "<group>"; };
+		CE64F0C21F1A203200D67CAD /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = API/Request.swift; sourceTree = "<group>"; };
+		CE64F0C41F1A213600D67CAD /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = API/HTTPMethod.swift; sourceTree = "<group>"; };
+		CE64F0C61F1A221700D67CAD /* VKAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VKAPI.swift; path = API/VKAPI.swift; sourceTree = "<group>"; };
+		CE64F0C81F1A236600D67CAD /* Const+HTTPCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Const+HTTPCode.swift"; path = "Const/Const+HTTPCode.swift"; sourceTree = "<group>"; };
+		CE64F0CA1F1A23A500D67CAD /* LocalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalError.swift; path = Entity/Models/LocalError.swift; sourceTree = "<group>"; };
+		CE64F0CD1F1A243600D67CAD /* Data+serializeJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+serializeJSON.swift"; path = "Extensions/Data+serializeJSON.swift"; sourceTree = "<group>"; };
+		CE64F0CF1F1A28DA00D67CAD /* ArrayHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayHandler.swift; path = Entity/Models/ArrayHandler.swift; sourceTree = "<group>"; };
+		CE64F0D11F1A297900D67CAD /* NewsLocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsLocalStorage.swift; path = Entity/Repository/NewsLocalStorage.swift; sourceTree = "<group>"; };
+		CE64F0D51F1A2FDB00D67CAD /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		CE64F0D61F1A2FDB00D67CAD /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		FF0619BEF3DCEC50EC9C3B75 /* ListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,6 +275,7 @@
 		CE64F04E1F1A0DF300D67CAD /* test */ = {
 			isa = PBXGroup;
 			children = (
+				CE64F0CC1F1A242000D67CAD /* Entensions */,
 				CE64F0A41F1A18D600D67CAD /* Const */,
 				CE64F0951F1A16AB00D67CAD /* Entity */,
 				B3EE118F28CD0EE23A4B4E1A /* Scenes */,
@@ -334,6 +357,7 @@
 		CE64F0951F1A16AB00D67CAD /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				CE64F0C11F1A202100D67CAD /* API */,
 				CE64F0B61F1A1CB200D67CAD /* Repository */,
 				CE64F09B1F1A174B00D67CAD /* Models */,
 				CE64F0961F1A16C500D67CAD /* BaseStorage */,
@@ -348,6 +372,7 @@
 				CE64F0971F1A16E300D67CAD /* Network */,
 				CE64F0A01F1A17BB00D67CAD /* Mappable.swift */,
 				CE64F0BD1F1A1D0700D67CAD /* BaseRepository.swift */,
+				CE64F0BF1F1A1FCE00D67CAD /* RequestBuilder.swift */,
 			);
 			name = BaseStorage;
 			sourceTree = "<group>";
@@ -376,6 +401,8 @@
 				CE64F0AD1F1A1B5400D67CAD /* ListModel */,
 				CE64F0A21F1A183700D67CAD /* Result.swift */,
 				CE64F0B41F1A1B9500D67CAD /* Mapper.swift */,
+				CE64F0CA1F1A23A500D67CAD /* LocalError.swift */,
+				CE64F0CF1F1A28DA00D67CAD /* ArrayHandler.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -385,6 +412,7 @@
 			children = (
 				CE64F0A51F1A18E500D67CAD /* Const.swift */,
 				CE64F0A71F1A18F600D67CAD /* Const+Network.swift */,
+				CE64F0C81F1A236600D67CAD /* Const+HTTPCode.swift */,
 			);
 			name = Const;
 			sourceTree = "<group>";
@@ -392,9 +420,9 @@
 		CE64F0AD1F1A1B5400D67CAD /* ListModel */ = {
 			isa = PBXGroup;
 			children = (
-				CE64F0AE1F1A1B6C00D67CAD /* ListModel.swift */,
-				CE64F0B01F1A1B7A00D67CAD /* RListModel.swift */,
-				CE64F0B21F1A1B8700D67CAD /* ListModelMapper.swift */,
+				CE64F0AE1F1A1B6C00D67CAD /* FriendModel.swift */,
+				CE64F0B01F1A1B7A00D67CAD /* RFriendModel.swift */,
+				CE64F0B21F1A1B8700D67CAD /* FriendModelMapper.swift */,
 			);
 			name = ListModel;
 			sourceTree = "<group>";
@@ -403,8 +431,27 @@
 			isa = PBXGroup;
 			children = (
 				CE64F0B91F1A1CD200D67CAD /* ListRepository.swift */,
+				CE64F0D11F1A297900D67CAD /* NewsLocalStorage.swift */,
 			);
 			name = Repository;
+			sourceTree = "<group>";
+		};
+		CE64F0C11F1A202100D67CAD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CE64F0C21F1A203200D67CAD /* Request.swift */,
+				CE64F0C41F1A213600D67CAD /* HTTPMethod.swift */,
+				CE64F0C61F1A221700D67CAD /* VKAPI.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		CE64F0CC1F1A242000D67CAD /* Entensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE64F0CD1F1A243600D67CAD /* Data+serializeJSON.swift */,
+			);
+			name = Entensions;
 			sourceTree = "<group>";
 		};
 		CF2E5443C50389A8BA1ECACF /* View */ = {
@@ -414,6 +461,8 @@
 				4B83F1760F861F1DD446C298 /* ListViewOutput.swift */,
 				286068DB280E7F25C1F5C823 /* ListViewController.swift */,
 				6A52E8CACA5C91A994329F4D /* ListViewController.xib */,
+				CE64F0D51F1A2FDB00D67CAD /* ListCell.swift */,
+				CE64F0D61F1A2FDB00D67CAD /* ListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -531,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE64F05A1F1A0DF300D67CAD /* LaunchScreen.storyboard in Resources */,
+				CE64F0D81F1A2FDB00D67CAD /* ListCell.xib in Resources */,
 				CE64F0571F1A0DF300D67CAD /* Assets.xcassets in Resources */,
 				754A8FB24172E64267E58AE5 /* ListViewController.xib in Resources */,
 			);
@@ -589,24 +639,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE64F0501F1A0DF300D67CAD /* AppDelegate.swift in Sources */,
+				CE64F0C71F1A221700D67CAD /* VKAPI.swift in Sources */,
 				CE64F0A61F1A18E500D67CAD /* Const.swift in Sources */,
 				CE64F0A11F1A17BB00D67CAD /* Mappable.swift in Sources */,
 				CE64F0A31F1A183700D67CAD /* Result.swift in Sources */,
-				CE64F0B31F1A1B8700D67CAD /* ListModelMapper.swift in Sources */,
+				CE64F0B31F1A1B8700D67CAD /* FriendModelMapper.swift in Sources */,
+				CE64F0D01F1A28DA00D67CAD /* ArrayHandler.swift in Sources */,
 				CE64F0A81F1A18F600D67CAD /* Const+Network.swift in Sources */,
 				CE64F0B51F1A1B9500D67CAD /* Mapper.swift in Sources */,
+				CE64F0C91F1A236600D67CAD /* Const+HTTPCode.swift in Sources */,
+				CE64F0C31F1A203200D67CAD /* Request.swift in Sources */,
 				CE64F09D1F1A176700D67CAD /* NetworkService.swift in Sources */,
 				CE64F09F1F1A178200D67CAD /* NetworkServiceImpl.swift in Sources */,
+				CE64F0CB1F1A23A500D67CAD /* LocalError.swift in Sources */,
+				CE64F0D21F1A297900D67CAD /* NewsLocalStorage.swift in Sources */,
+				CE64F0C01F1A1FCE00D67CAD /* RequestBuilder.swift in Sources */,
 				CE64F0BE1F1A1D0700D67CAD /* BaseRepository.swift in Sources */,
 				CE64F08E1F1A154B00D67CAD /* MainContainer.swift in Sources */,
 				CE64F0901F1A155400D67CAD /* Global.swift in Sources */,
 				0B65826E75C14B5D4D07F5E1 /* ListViewInput.swift in Sources */,
-				CE64F0B11F1A1B7A00D67CAD /* RListModel.swift in Sources */,
+				CE64F0B11F1A1B7A00D67CAD /* RFriendModel.swift in Sources */,
 				CE64F0BA1F1A1CD200D67CAD /* ListRepository.swift in Sources */,
 				91FFE0E2334C5DC5D9249336 /* ListViewOutput.swift in Sources */,
+				CE64F0D71F1A2FDB00D67CAD /* ListCell.swift in Sources */,
 				CE64F0AC1F1A1AFA00D67CAD /* RealmServiceImpl.swift in Sources */,
 				17777FF0096FB4F951EED00F /* ListViewController.swift in Sources */,
-				CE64F0AF1F1A1B6C00D67CAD /* ListModel.swift in Sources */,
+				CE64F0C51F1A213600D67CAD /* HTTPMethod.swift in Sources */,
+				CE64F0AF1F1A1B6C00D67CAD /* FriendModel.swift in Sources */,
+				CE64F0CE1F1A243600D67CAD /* Data+serializeJSON.swift in Sources */,
 				DFD5B3829D3C991B1293F92B /* ListModuleInput.swift in Sources */,
 				5381F2B666783256BF95456C /* ListPresenter.swift in Sources */,
 				679C8FCEB292A751115E9A61 /* ListInteractorInput.swift in Sources */,

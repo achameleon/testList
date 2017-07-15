@@ -1,5 +1,5 @@
 //
-//  Mappable.swift
+//  VKAPI.swift
 //  test
 //
 //  Created by Anton Skorodumov on 15.07.17.
@@ -8,8 +8,15 @@
 
 import Foundation
 
-protocol Mappable {
+
+enum VKAPI {
     
-    init?(map: AnyObject?)
+    case friends()
+    
+}
+
+extension VKAPI: Request {
+    
+    
     
 }

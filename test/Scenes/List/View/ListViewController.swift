@@ -12,14 +12,26 @@ class ListViewController: UIViewController, ListViewInput {
 
     var output: ListViewOutput!
 
+    @IBOutlet weak var tableView: UITableView!
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
+        tableView.register(UINib(nibName: "ListCell", bundle: Bundle.main), forCellReuseIdentifier: "ListCell")
+        
     }
 
 
     // MARK: ListViewInput
     func setupInitialState() {
     }
+}
+
+extension ListViewController: UITableViewDelegate {
+    
+}
+
+extension ListViewController: UITableViewDataSource {
+    
 }

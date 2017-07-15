@@ -11,8 +11,9 @@ import Foundation
 class NetworkServiceImpl {
     
     var session: URLSession!
+    var builder: RequestBuilder!
     
-    init() {
+    init(requestBuilder: RequestBuilder) {
         generateSession()
     }
     
@@ -34,9 +35,28 @@ class NetworkServiceImpl {
 extension NetworkServiceImpl: NetworkService {
     
     func process<T: Mappable>(response: T.Type,
-                 request: URLRequest,
-                 result: (Result<T.Type>) -> Void) {
-        
+                 request: Request,
+                 result: @escaping (Result<T>) -> Void) {
+        guard let urlRequest = builder.build(request: request) else {
+            result(Result.failure(LocalError.invalidAPIURL()))
+            return
+        }
+        let dataData = session.dataTask(with: urlRequest)
+        { [weak self] (data, response, error) in
+            guard error == nil else {
+                result(Result.failure(error))
+                return
+            }
+            let httpResponse = response as? HTTPURLResponse
+            guard httpResponse?.statusCode != Const.HTTPCode.ok else {
+                result(Result.failure(LocalError.httpErrorCode(httpResponse?.statusCode ?? 0)))
+                return
+            }
+            let json = data?.serialize
+            let responseObject = T(map: json)
+            result(Result.success(responseObject))
+        }
+        dataData.resume()
     }
     
 }

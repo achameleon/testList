@@ -1,5 +1,5 @@
 //
-//  Mappable.swift
+//  HTTPMethod.swift
 //  test
 //
 //  Created by Anton Skorodumov on 15.07.17.
@@ -8,8 +8,11 @@
 
 import Foundation
 
-protocol Mappable {
+enum HTTPMethod: String {
     
-    init?(map: AnyObject?)
+    case GET = "GET"
+    case POST = "POST"
+    case PUT = "PUT"
+    case DELETE = "DELETE"
     
 }

@@ -11,7 +11,7 @@ import Foundation
 protocol NetworkService {
     
     func process<T: Mappable>(response: T.Type,
-                 request: URLRequest,
-                 result: (Result<T.Type>) -> Void)
+                 request: Request,
+                 result: @escaping (Result<T>) -> Void)
     
 }

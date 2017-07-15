@@ -14,6 +14,11 @@ extension Const {
         
         static let connectionCount: Int = 3
         static let requestTimeout: TimeInterval = 10
+     
+        static let debug: Bool = true
+        
+        static let productionURL: String = ""
+        static let developmentURL: String = ""
         
     }
     
