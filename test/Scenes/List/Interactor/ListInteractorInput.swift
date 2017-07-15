@@ -10,4 +10,6 @@ import Foundation
 
 protocol ListInteractorInput {
 
+    func requestFriendsInformation()
+
 }

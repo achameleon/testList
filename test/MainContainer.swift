@@ -8,14 +8,25 @@
 
 import Foundation
 import Swinject
-
+import UIKit
 
 class MainContainer {
     
     private var container: Container!
+    private var window: UIWindow!
     
     init() {
         container = Container()
+        let assembler = Assembler()
+        assembler.apply(assemblies: [RepositoryAssemply(),
+                                     ControllerAssembly()])
+    }
+    
+    func start() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let controller = container.resolve(ListModuleConfigurator.self)!
+        window.rootViewController = controller.viewController
+        window.makeKeyAndVisible()
     }
     
 }

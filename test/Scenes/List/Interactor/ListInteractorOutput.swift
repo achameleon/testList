@@ -10,4 +10,6 @@ import Foundation
 
 protocol ListInteractorOutput: class {
 
+    func successLoadedFriendsInformation(friendsList: [FriendModel])
+    
 }

@@ -8,12 +8,21 @@
 
 import UIKit
 
-class ListRouter: ListRouterInput {
+class ListRouter {
 
     var routerController: UIViewController?
     
     init(controller: UIViewController) {
         routerController = controller
+    }
+    
+}
+
+extension ListRouter: ListRouterInput {
+
+    func moveToListDescription(item: FriendModel) {
+        // TODO: - navigation
+        //routerController?.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
     }
     
 }

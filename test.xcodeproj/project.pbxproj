@@ -60,6 +60,8 @@
 		CE64F0D21F1A297900D67CAD /* NewsLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0D11F1A297900D67CAD /* NewsLocalStorage.swift */; };
 		CE64F0D71F1A2FDB00D67CAD /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0D51F1A2FDB00D67CAD /* ListCell.swift */; };
 		CE64F0D81F1A2FDB00D67CAD /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0D61F1A2FDB00D67CAD /* ListCell.xib */; };
+		CE64F0DB1F1A33A000D67CAD /* RepositoryAssemply.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0DA1F1A33A000D67CAD /* RepositoryAssemply.swift */; };
+		CE64F0DD1F1A347200D67CAD /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0DC1F1A347200D67CAD /* ControllerAssembly.swift */; };
 		DB0421F9BC61237A773B8C3F /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF9F5AD5089E01D31A50B0 /* ListViewTests.swift */; };
 		DFD5B3829D3C991B1293F92B /* ListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B76B0B83FB4D9FA1B5258 /* ListModuleInput.swift */; };
 		F819957618FBEC1CBB660B40 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A09736081626020FEF48D8 /* ListInteractorTests.swift */; };
@@ -135,6 +137,8 @@
 		CE64F0D11F1A297900D67CAD /* NewsLocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsLocalStorage.swift; path = Entity/Repository/NewsLocalStorage.swift; sourceTree = "<group>"; };
 		CE64F0D51F1A2FDB00D67CAD /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		CE64F0D61F1A2FDB00D67CAD /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		CE64F0DA1F1A33A000D67CAD /* RepositoryAssemply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryAssemply.swift; path = Assembly/RepositoryAssemply.swift; sourceTree = "<group>"; };
+		CE64F0DC1F1A347200D67CAD /* ControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerAssembly.swift; path = Assembly/ControllerAssembly.swift; sourceTree = "<group>"; };
 		FF0619BEF3DCEC50EC9C3B75 /* ListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,6 +279,7 @@
 		CE64F04E1F1A0DF300D67CAD /* test */ = {
 			isa = PBXGroup;
 			children = (
+				CE64F0D91F1A31AB00D67CAD /* Assembly */,
 				CE64F0CC1F1A242000D67CAD /* Entensions */,
 				CE64F0A41F1A18D600D67CAD /* Const */,
 				CE64F0951F1A16AB00D67CAD /* Entity */,
@@ -452,6 +457,15 @@
 				CE64F0CD1F1A243600D67CAD /* Data+serializeJSON.swift */,
 			);
 			name = Entensions;
+			sourceTree = "<group>";
+		};
+		CE64F0D91F1A31AB00D67CAD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CE64F0DA1F1A33A000D67CAD /* RepositoryAssemply.swift */,
+				CE64F0DC1F1A347200D67CAD /* ControllerAssembly.swift */,
+			);
+			name = Assembly;
 			sourceTree = "<group>";
 		};
 		CF2E5443C50389A8BA1ECACF /* View */ = {
@@ -651,6 +665,7 @@
 				CE64F0C31F1A203200D67CAD /* Request.swift in Sources */,
 				CE64F09D1F1A176700D67CAD /* NetworkService.swift in Sources */,
 				CE64F09F1F1A178200D67CAD /* NetworkServiceImpl.swift in Sources */,
+				CE64F0DB1F1A33A000D67CAD /* RepositoryAssemply.swift in Sources */,
 				CE64F0CB1F1A23A500D67CAD /* LocalError.swift in Sources */,
 				CE64F0D21F1A297900D67CAD /* NewsLocalStorage.swift in Sources */,
 				CE64F0C01F1A1FCE00D67CAD /* RequestBuilder.swift in Sources */,
@@ -660,6 +675,7 @@
 				0B65826E75C14B5D4D07F5E1 /* ListViewInput.swift in Sources */,
 				CE64F0B11F1A1B7A00D67CAD /* RFriendModel.swift in Sources */,
 				CE64F0BA1F1A1CD200D67CAD /* ListRepository.swift in Sources */,
+				CE64F0DD1F1A347200D67CAD /* ControllerAssembly.swift in Sources */,
 				91FFE0E2334C5DC5D9249336 /* ListViewOutput.swift in Sources */,
 				CE64F0D71F1A2FDB00D67CAD /* ListCell.swift in Sources */,
 				CE64F0AC1F1A1AFA00D67CAD /* RealmServiceImpl.swift in Sources */,

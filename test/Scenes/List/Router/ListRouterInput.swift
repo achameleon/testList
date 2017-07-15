@@ -10,4 +10,6 @@ import Foundation
 
 protocol ListRouterInput {
 
+    func moveToListDescription(item: FriendModel)
+    
 }

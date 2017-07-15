@@ -14,4 +14,13 @@ protocol ListViewOutput {
     */
 
     func viewIsReady()
+    
+    func numberOfSections() -> Int
+    
+    func numberOfRowInSection(section: Int) -> Int
+    
+    func dataForCellForRowSection(section: Int, row: Int) -> FriendModel
+    
+    func selectRowInRowSection(section: Int, row: Int)
+    
 }

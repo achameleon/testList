@@ -10,6 +10,8 @@ import UIKit
 
 class ListCell: UITableViewCell {
 
+    @IBOutlet weak var lblText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

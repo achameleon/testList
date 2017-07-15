@@ -26,7 +26,7 @@ class ListModuleConfigurator {
         presenter.view = listViewController
         presenter.router = router
 
-        let interactor = ListInteractor()
+        let interactor = ListInteractor(listRepository: resolver.resolve(ListRepositoryImpl.self)!)
         interactor.output = presenter
 
         presenter.interactor = interactor

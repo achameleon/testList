@@ -30,8 +30,27 @@ class ListViewController: UIViewController, ListViewInput {
 
 extension ListViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        output.selectRowInRowSection(section: indexPath.section, row: indexPath.row)
+    }
+    
 }
 
 extension ListViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return output.numberOfSections()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return output.numberOfRowInSection(section: section)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = output.dataForCellForRowSection(section: indexPath.section, row: indexPath.row)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell") as! ListCell
+        cell.lblText.text = item.listDescription
+        return cell
+    }
     
 }

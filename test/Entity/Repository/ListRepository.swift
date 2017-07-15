@@ -10,7 +10,7 @@ import Foundation
 
 protocol ListRepositoryListener {
     
-    func successLoadedNews(news: [FriendModel])
+    func successLoadedFriends(friends: [FriendModel])
     func failure(error: Error?)
     
 }
@@ -40,7 +40,7 @@ class ListRepositoryImpl: BaseRepository<FriendModel> {
 extension ListRepositoryImpl: ListRepository {
     
     func loadNews(listener: ListRepositoryListener) {
-        listener.successLoadedNews(news: db.getFriends())
+        listener.successLoadedFriends(news: db.getFriends())
         net.process(response: ArrayHandler<FriendModel>.self,
                     request: VKAPI.friends())
         { [weak self] (result) in
