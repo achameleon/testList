@@ -17,7 +17,7 @@ class MainContainer {
     
     init() {
         container = Container()
-        let assembler = Assembler()
+        let assembler = Assembler(container: container)
         assembler.apply(assemblies: [RepositoryAssemply(),
                                      ControllerAssembly()])
     }
