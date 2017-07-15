@@ -40,7 +40,7 @@ class ListRepositoryImpl: BaseRepository<FriendModel> {
 extension ListRepositoryImpl: ListRepository {
     
     func loadNews(listener: ListRepositoryListener) {
-        listener.successLoadedFriends(news: db.getFriends())
+        listener.successLoadedFriends(friends: db.getFriends())
         net.process(response: ArrayHandler<FriendModel>.self,
                     request: VKAPI.friends())
         { [weak self] (result) in
@@ -50,7 +50,7 @@ extension ListRepositoryImpl: ListRepository {
                     return
                 }
                 self?.db.saveFriends(friends: list)
-                listener.successLoadedNews(news: list)
+                listener.successLoadedFriends(friends: list)
             }
         }
     }
