@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController, ListViewInput {
+class ListViewController: UIViewController {
 
     var output: ListViewOutput!
 
@@ -19,13 +19,21 @@ class ListViewController: UIViewController, ListViewInput {
         super.viewDidLoad()
         output.viewIsReady()
         tableView.register(UINib(nibName: "ListCell", bundle: Bundle.main), forCellReuseIdentifier: "ListCell")
-        
+        tableView.delegate = self
+        tableView.dataSource =self
     }
 
+}
 
-    // MARK: ListViewInput
+extension ListViewController: ListViewInput {
+ 
     func setupInitialState() {
     }
+    
+    func reload() {
+        tableView.reloadData()
+    }
+    
 }
 
 extension ListViewController: UITableViewDelegate {

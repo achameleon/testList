@@ -50,6 +50,7 @@ extension ListPresenter: ListInteractorOutput {
     
     func successLoadedFriendsInformation(friendsList: [FriendModel]) {
         friends = friendsList
+        view.reload()
     }
     
 }

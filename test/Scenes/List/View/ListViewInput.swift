@@ -14,4 +14,6 @@ protocol ListViewInput: class {
     */
 
     func setupInitialState()
+    
+    func reload()
 }

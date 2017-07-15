@@ -43,19 +43,25 @@ extension NetworkServiceImpl: NetworkService {
             return
         }
         let dataData = session.dataTask(with: urlRequest)
-        { [weak self] (data, response, error) in
+        { (data, response, error) in
             guard error == nil else {
-                result(Result.failure(error))
+                DispatchQueue.main.async {
+                    result(Result.failure(error))
+                }
                 return
             }
             let httpResponse = response as? HTTPURLResponse
-            guard httpResponse?.statusCode != Const.HTTPCode.ok else {
-                result(Result.failure(LocalError.httpErrorCode(httpResponse?.statusCode ?? 0)))
+            guard httpResponse?.statusCode == Const.HTTPCode.ok else {
+                DispatchQueue.main.async {
+                    result(Result.failure(LocalError.httpErrorCode(httpResponse?.statusCode ?? 0)))
+                }
                 return
             }
             let json = data?.serialize
             let responseObject = T(map: json)
-            result(Result.success(responseObject))
+            DispatchQueue.main.async {
+                result(Result.success(responseObject))
+            }
         }
         dataData.resume()
     }
