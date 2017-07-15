@@ -6,30 +6,58 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ListCell" customModule="test" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="197" id="KGk-i7-Jjw" customClass="ListCell" customModule="test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCy-ch-u80">
-                        <rect key="frame" x="8" y="11" width="304" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSE-pb-Red">
+                        <rect key="frame" x="8" y="8" width="304" height="184"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCy-ch-u80">
+                                <rect key="frame" x="8" y="0.0" width="296" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVm-X1-1Yk">
+                                <rect key="frame" x="10" y="29" width="284" height="147"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kVm-X1-1Yk" firstAttribute="top" secondItem="iCy-ch-u80" secondAttribute="bottom" id="0XF-ac-hgc"/>
+                            <constraint firstItem="kVm-X1-1Yk" firstAttribute="leading" secondItem="FSE-pb-Red" secondAttribute="leading" id="Gip-ci-tnB"/>
+                            <constraint firstItem="iCy-ch-u80" firstAttribute="leading" secondItem="FSE-pb-Red" secondAttribute="leading" constant="8" id="Nie-9J-egf"/>
+                            <constraint firstAttribute="trailing" secondItem="iCy-ch-u80" secondAttribute="trailing" id="Ogr-Y6-vnS"/>
+                            <constraint firstItem="iCy-ch-u80" firstAttribute="top" secondItem="FSE-pb-Red" secondAttribute="top" id="U9J-Np-p4Z"/>
+                            <constraint firstAttribute="bottom" secondItem="kVm-X1-1Yk" secondAttribute="bottom" id="qrX-Ag-PfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="kVm-X1-1Yk" secondAttribute="trailing" id="xFn-Mb-oBY"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="FSE-pb-Red" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ARJ-LH-zOQ"/>
+                    <constraint firstItem="FSE-pb-Red" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="E6c-CS-WE8"/>
+                    <constraint firstItem="FSE-pb-Red" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ZEY-Me-r4k"/>
+                    <constraint firstItem="FSE-pb-Red" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="kT4-gt-fWO"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="ivPhoto" destination="kVm-X1-1Yk" id="QX3-7K-dWO"/>
                 <outlet property="lblText" destination="iCy-ch-u80" id="3ol-Ai-vGa"/>
+                <outlet property="vwCloud" destination="FSE-pb-Red" id="7oO-M0-Va3"/>
             </connections>
+            <point key="canvasLocation" x="6" y="-178"/>
         </tableViewCell>
     </objects>
 </document>

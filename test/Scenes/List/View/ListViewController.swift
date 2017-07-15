@@ -20,7 +20,9 @@ class ListViewController: UIViewController {
         output.viewIsReady()
         tableView.register(UINib(nibName: "ListCell", bundle: Bundle.main), forCellReuseIdentifier: "ListCell")
         tableView.delegate = self
-        tableView.dataSource =self
+        tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 200.0
     }
 
 }
@@ -57,7 +59,7 @@ extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = output.dataForCellForRowSection(section: indexPath.section, row: indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell") as! ListCell
-        cell.lblText.text = item.firstName + "" + item.lastName
+        cell.setup(friend: item)
         return cell
     }
     

@@ -282,7 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				CE64F0D91F1A31AB00D67CAD /* Assembly */,
-				CE64F0CC1F1A242000D67CAD /* Entensions */,
+				CE64F0CC1F1A242000D67CAD /* Extensions */,
 				CE64F0A41F1A18D600D67CAD /* Const */,
 				CE64F0951F1A16AB00D67CAD /* Entity */,
 				B3EE118F28CD0EE23A4B4E1A /* Scenes */,
@@ -454,12 +454,12 @@
 			name = API;
 			sourceTree = "<group>";
 		};
-		CE64F0CC1F1A242000D67CAD /* Entensions */ = {
+		CE64F0CC1F1A242000D67CAD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				CE64F0CD1F1A243600D67CAD /* Data+serializeJSON.swift */,
 			);
-			name = Entensions;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		CE64F0D91F1A31AB00D67CAD /* Assembly */ = {

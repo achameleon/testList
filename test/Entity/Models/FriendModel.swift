@@ -15,6 +15,13 @@ class FriendModel: Equatable, Mappable {
     var lastName: String = ""
     var photoURL: String = ""
     
+    var fullName: String {
+        return firstName + " " + lastName
+    }
+    var url: URL? {
+        return URL(string: photoURL)
+    }
+    
     init() {
         
     }
