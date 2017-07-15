@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B4CF3C873F959FED3F5DE1 /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D65B5CCB2A990F8EE4D66A /* ListPresenterTests.swift */; };
+		051AEC57FB693E0A2EE06D25 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEACDB440AFCB09440EA2E /* ListInteractor.swift */; };
+		0B65826E75C14B5D4D07F5E1 /* ListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6C8AF9B866BDCB4E86373 /* ListViewInput.swift */; };
+		17777FF0096FB4F951EED00F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286068DB280E7F25C1F5C823 /* ListViewController.swift */; };
+		23CC4CA3BDE5C4510FE9F466 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EB539621A6EEA00A056E8 /* ListRouter.swift */; };
+		37BE848A19EEC6D43ADE41A8 /* ListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5FBAECD2AB79F4EE49A52E /* ListRouterInput.swift */; };
+		4F215EDC0245FEBE6EE8F738 /* ListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF329BDEAC31743A79B2AB9 /* ListConfigurator.swift */; };
+		5381F2B666783256BF95456C /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0619BEF3DCEC50EC9C3B75 /* ListPresenter.swift */; };
+		55348B37FFACDB0C7AA15837 /* ListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630DF57174A692E62C796F7 /* ListRouterTests.swift */; };
+		5A96C7BA5988B25D1D263344 /* ListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F168059357DF6F88120BD85 /* ListInteractorOutput.swift */; };
+		5E7CDC0BCB56BB63A9BA7AE2 /* ListConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E93DF2D9A258CBCC75CA7 /* ListConfiguratorTests.swift */; };
+		679C8FCEB292A751115E9A61 /* ListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DE606CB0611CBECC28D90 /* ListInteractorInput.swift */; };
+		754A8FB24172E64267E58AE5 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A52E8CACA5C91A994329F4D /* ListViewController.xib */; };
+		91FFE0E2334C5DC5D9249336 /* ListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B83F1760F861F1DD446C298 /* ListViewOutput.swift */; };
 		CE64F0501F1A0DF300D67CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F04F1F1A0DF300D67CAD /* AppDelegate.swift */; };
 		CE64F0571F1A0DF300D67CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0561F1A0DF300D67CAD /* Assets.xcassets */; };
 		CE64F05A1F1A0DF300D67CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64F0581F1A0DF300D67CAD /* LaunchScreen.storyboard */; };
@@ -27,6 +41,17 @@
 		CE64F0A31F1A183700D67CAD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0A21F1A183700D67CAD /* Result.swift */; };
 		CE64F0A61F1A18E500D67CAD /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0A51F1A18E500D67CAD /* Const.swift */; };
 		CE64F0A81F1A18F600D67CAD /* Const+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0A71F1A18F600D67CAD /* Const+Network.swift */; };
+		CE64F0AA1F1A1AEC00D67CAD /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0A91F1A1AEC00D67CAD /* RealmService.swift */; };
+		CE64F0AC1F1A1AFA00D67CAD /* RealmServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0AB1F1A1AFA00D67CAD /* RealmServiceImpl.swift */; };
+		CE64F0AF1F1A1B6C00D67CAD /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0AE1F1A1B6C00D67CAD /* ListModel.swift */; };
+		CE64F0B11F1A1B7A00D67CAD /* RListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B01F1A1B7A00D67CAD /* RListModel.swift */; };
+		CE64F0B31F1A1B8700D67CAD /* ListModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B21F1A1B8700D67CAD /* ListModelMapper.swift */; };
+		CE64F0B51F1A1B9500D67CAD /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B41F1A1B9500D67CAD /* Mapper.swift */; };
+		CE64F0BA1F1A1CD200D67CAD /* ListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0B91F1A1CD200D67CAD /* ListRepository.swift */; };
+		CE64F0BE1F1A1D0700D67CAD /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64F0BD1F1A1D0700D67CAD /* BaseRepository.swift */; };
+		DB0421F9BC61237A773B8C3F /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF9F5AD5089E01D31A50B0 /* ListViewTests.swift */; };
+		DFD5B3829D3C991B1293F92B /* ListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B76B0B83FB4D9FA1B5258 /* ListModuleInput.swift */; };
+		F819957618FBEC1CBB660B40 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A09736081626020FEF48D8 /* ListInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +65,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0630DF57174A692E62C796F7 /* ListRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListRouterTests.swift; sourceTree = "<group>"; };
+		0D5FBAECD2AB79F4EE49A52E /* ListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListRouterInput.swift; sourceTree = "<group>"; };
+		18D65B5CCB2A990F8EE4D66A /* ListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		286068DB280E7F25C1F5C823 /* ListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		35A09736081626020FEF48D8 /* ListInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractorTests.swift; sourceTree = "<group>"; };
+		4B83F1760F861F1DD446C298 /* ListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewOutput.swift; sourceTree = "<group>"; };
+		5B3B76B0B83FB4D9FA1B5258 /* ListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListModuleInput.swift; sourceTree = "<group>"; };
+		5F168059357DF6F88120BD85 /* ListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractorOutput.swift; sourceTree = "<group>"; };
+		6A52E8CACA5C91A994329F4D /* ListViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		6AF329BDEAC31743A79B2AB9 /* ListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
+		71AEACDB440AFCB09440EA2E /* ListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		780E93DF2D9A258CBCC75CA7 /* ListConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListConfiguratorTests.swift; sourceTree = "<group>"; };
+		8DAF9F5AD5089E01D31A50B0 /* ListViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewTests.swift; sourceTree = "<group>"; };
+		91E6C8AF9B866BDCB4E86373 /* ListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewInput.swift; sourceTree = "<group>"; };
+		944DE606CB0611CBECC28D90 /* ListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractorInput.swift; sourceTree = "<group>"; };
+		B02EB539621A6EEA00A056E8 /* ListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		CE64F04C1F1A0DF300D67CAD /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE64F04F1F1A0DF300D67CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE64F0561F1A0DF300D67CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +105,15 @@
 		CE64F0A21F1A183700D67CAD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Entity/Models/Result.swift; sourceTree = "<group>"; };
 		CE64F0A51F1A18E500D67CAD /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Const.swift; path = Const/Const.swift; sourceTree = "<group>"; };
 		CE64F0A71F1A18F600D67CAD /* Const+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Const+Network.swift"; path = "Const/Const+Network.swift"; sourceTree = "<group>"; };
+		CE64F0A91F1A1AEC00D67CAD /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmService.swift; path = Entity/BaseStorage/RealmService.swift; sourceTree = "<group>"; };
+		CE64F0AB1F1A1AFA00D67CAD /* RealmServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmServiceImpl.swift; path = Entity/BaseStorage/RealmServiceImpl.swift; sourceTree = "<group>"; };
+		CE64F0AE1F1A1B6C00D67CAD /* ListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListModel.swift; path = Entity/Models/ListModel.swift; sourceTree = "<group>"; };
+		CE64F0B01F1A1B7A00D67CAD /* RListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RListModel.swift; path = Entity/Models/RListModel.swift; sourceTree = "<group>"; };
+		CE64F0B21F1A1B8700D67CAD /* ListModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListModelMapper.swift; path = Entity/Models/ListModelMapper.swift; sourceTree = "<group>"; };
+		CE64F0B41F1A1B9500D67CAD /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Entity/Models/Mapper.swift; sourceTree = "<group>"; };
+		CE64F0B91F1A1CD200D67CAD /* ListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListRepository.swift; path = Entity/Repository/ListRepository.swift; sourceTree = "<group>"; };
+		CE64F0BD1F1A1D0700D67CAD /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRepository.swift; path = Entity/BaseStorage/BaseRepository.swift; sourceTree = "<group>"; };
+		FF0619BEF3DCEC50EC9C3B75 /* ListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +142,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07F8149FB3AF0AF63BA67270 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F7AA8B555233BCBF71D356BB /* Configurator */,
+				0F394C417B8B2F3640F03ADA /* View */,
+				BC17C9E265EE6C19BA1C2B04 /* Interactor */,
+				131ADF911D7E75746386FF28 /* Presenter */,
+				2AA3B06B4277950249FB4E51 /* Router */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		0F394C417B8B2F3640F03ADA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DAF9F5AD5089E01D31A50B0 /* ListViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		131ADF911D7E75746386FF28 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				18D65B5CCB2A990F8EE4D66A /* ListPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2AA3B06B4277950249FB4E51 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0630DF57174A692E62C796F7 /* ListRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		300D96A30810189DC813D4D3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				6AF329BDEAC31743A79B2AB9 /* ListConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		35138D93D41CBCA8CBC1E417 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E5443C50389A8BA1ECACF /* View */,
+				3B79B53201F52F7377C02A45 /* Presenter */,
+				D2F864F61E3B8F6D9AD2BB53 /* Interactor */,
+				D150D99E2E1260D6A4282351 /* Router */,
+				300D96A30810189DC813D4D3 /* Configurator */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		3B79B53201F52F7377C02A45 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5B3B76B0B83FB4D9FA1B5258 /* ListModuleInput.swift */,
+				FF0619BEF3DCEC50EC9C3B75 /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		B38C6F0057E7C4F3CDBC3F3F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				07F8149FB3AF0AF63BA67270 /* List */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -102,8 +218,17 @@
 		B3EE118F28CD0EE23A4B4E1A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				35138D93D41CBCA8CBC1E417 /* List */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BC17C9E265EE6C19BA1C2B04 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				35A09736081626020FEF48D8 /* ListInteractorTests.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		CE64F0431F1A0DF300D67CAD = {
@@ -209,6 +334,7 @@
 		CE64F0951F1A16AB00D67CAD /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				CE64F0B61F1A1CB200D67CAD /* Repository */,
 				CE64F09B1F1A174B00D67CAD /* Models */,
 				CE64F0961F1A16C500D67CAD /* BaseStorage */,
 			);
@@ -221,6 +347,7 @@
 				CE64F0981F1A16E900D67CAD /* Realm */,
 				CE64F0971F1A16E300D67CAD /* Network */,
 				CE64F0A01F1A17BB00D67CAD /* Mappable.swift */,
+				CE64F0BD1F1A1D0700D67CAD /* BaseRepository.swift */,
 			);
 			name = BaseStorage;
 			sourceTree = "<group>";
@@ -237,6 +364,8 @@
 		CE64F0981F1A16E900D67CAD /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				CE64F0A91F1A1AEC00D67CAD /* RealmService.swift */,
+				CE64F0AB1F1A1AFA00D67CAD /* RealmServiceImpl.swift */,
 			);
 			name = Realm;
 			sourceTree = "<group>";
@@ -244,7 +373,9 @@
 		CE64F09B1F1A174B00D67CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE64F0AD1F1A1B5400D67CAD /* ListModel */,
 				CE64F0A21F1A183700D67CAD /* Result.swift */,
+				CE64F0B41F1A1B9500D67CAD /* Mapper.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -256,6 +387,62 @@
 				CE64F0A71F1A18F600D67CAD /* Const+Network.swift */,
 			);
 			name = Const;
+			sourceTree = "<group>";
+		};
+		CE64F0AD1F1A1B5400D67CAD /* ListModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE64F0AE1F1A1B6C00D67CAD /* ListModel.swift */,
+				CE64F0B01F1A1B7A00D67CAD /* RListModel.swift */,
+				CE64F0B21F1A1B8700D67CAD /* ListModelMapper.swift */,
+			);
+			name = ListModel;
+			sourceTree = "<group>";
+		};
+		CE64F0B61F1A1CB200D67CAD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE64F0B91F1A1CD200D67CAD /* ListRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		CF2E5443C50389A8BA1ECACF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91E6C8AF9B866BDCB4E86373 /* ListViewInput.swift */,
+				4B83F1760F861F1DD446C298 /* ListViewOutput.swift */,
+				286068DB280E7F25C1F5C823 /* ListViewController.swift */,
+				6A52E8CACA5C91A994329F4D /* ListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D150D99E2E1260D6A4282351 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0D5FBAECD2AB79F4EE49A52E /* ListRouterInput.swift */,
+				B02EB539621A6EEA00A056E8 /* ListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D2F864F61E3B8F6D9AD2BB53 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				944DE606CB0611CBECC28D90 /* ListInteractorInput.swift */,
+				5F168059357DF6F88120BD85 /* ListInteractorOutput.swift */,
+				71AEACDB440AFCB09440EA2E /* ListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F7AA8B555233BCBF71D356BB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				780E93DF2D9A258CBCC75CA7 /* ListConfiguratorTests.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +532,7 @@
 			files = (
 				CE64F05A1F1A0DF300D67CAD /* LaunchScreen.storyboard in Resources */,
 				CE64F0571F1A0DF300D67CAD /* Assets.xcassets in Resources */,
+				754A8FB24172E64267E58AE5 /* ListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,11 +592,30 @@
 				CE64F0A61F1A18E500D67CAD /* Const.swift in Sources */,
 				CE64F0A11F1A17BB00D67CAD /* Mappable.swift in Sources */,
 				CE64F0A31F1A183700D67CAD /* Result.swift in Sources */,
+				CE64F0B31F1A1B8700D67CAD /* ListModelMapper.swift in Sources */,
 				CE64F0A81F1A18F600D67CAD /* Const+Network.swift in Sources */,
+				CE64F0B51F1A1B9500D67CAD /* Mapper.swift in Sources */,
 				CE64F09D1F1A176700D67CAD /* NetworkService.swift in Sources */,
 				CE64F09F1F1A178200D67CAD /* NetworkServiceImpl.swift in Sources */,
+				CE64F0BE1F1A1D0700D67CAD /* BaseRepository.swift in Sources */,
 				CE64F08E1F1A154B00D67CAD /* MainContainer.swift in Sources */,
 				CE64F0901F1A155400D67CAD /* Global.swift in Sources */,
+				0B65826E75C14B5D4D07F5E1 /* ListViewInput.swift in Sources */,
+				CE64F0B11F1A1B7A00D67CAD /* RListModel.swift in Sources */,
+				CE64F0BA1F1A1CD200D67CAD /* ListRepository.swift in Sources */,
+				91FFE0E2334C5DC5D9249336 /* ListViewOutput.swift in Sources */,
+				CE64F0AC1F1A1AFA00D67CAD /* RealmServiceImpl.swift in Sources */,
+				17777FF0096FB4F951EED00F /* ListViewController.swift in Sources */,
+				CE64F0AF1F1A1B6C00D67CAD /* ListModel.swift in Sources */,
+				DFD5B3829D3C991B1293F92B /* ListModuleInput.swift in Sources */,
+				5381F2B666783256BF95456C /* ListPresenter.swift in Sources */,
+				679C8FCEB292A751115E9A61 /* ListInteractorInput.swift in Sources */,
+				5A96C7BA5988B25D1D263344 /* ListInteractorOutput.swift in Sources */,
+				CE64F0AA1F1A1AEC00D67CAD /* RealmService.swift in Sources */,
+				051AEC57FB693E0A2EE06D25 /* ListInteractor.swift in Sources */,
+				37BE848A19EEC6D43ADE41A8 /* ListRouterInput.swift in Sources */,
+				23CC4CA3BDE5C4510FE9F466 /* ListRouter.swift in Sources */,
+				4F215EDC0245FEBE6EE8F738 /* ListConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +624,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE64F0651F1A0DF400D67CAD /* testTests.swift in Sources */,
+				5E7CDC0BCB56BB63A9BA7AE2 /* ListConfiguratorTests.swift in Sources */,
+				DB0421F9BC61237A773B8C3F /* ListViewTests.swift in Sources */,
+				F819957618FBEC1CBB660B40 /* ListInteractorTests.swift in Sources */,
+				00B4CF3C873F959FED3F5DE1 /* ListPresenterTests.swift in Sources */,
+				55348B37FFACDB0C7AA15837 /* ListRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

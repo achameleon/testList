@@ -6,6 +6,14 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
+import UIKit
+
 class {{ module_info.name }}Router: {{ module_info.name }}RouterInput {
+
+    var routerController: UIViewController?
+
+    init(controller: UIViewController) {
+        routerController = controller
+    }
 
 }
